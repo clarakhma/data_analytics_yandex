@@ -23,21 +23,23 @@ El informe  tendrá en cuenta al crear una puntuación de crédito para un clien
 
 ## English
 
-### Project Description
-In this project, we will compare the musical preferences of the cities of Springfield and Shelbyville. Real data from Y.Music will be examined to test the hypotheses presented below and to compare user behavior between these two cities.
+### Risk Analysis of Borrower Default
 
-### Hypotheses
-User activity differs depending on the day of the week and the city. On Monday mornings, the inhabitants of Springfield and Shelbyville listen to different genres. The same happens on Friday nights.
-Listeners from Springfield and Shelbyville have different preferences. In Springfield, they prefer pop music, while in Shelbyville, there are more rap fans.
+### Project Description
+The project involves preparing a report for the loan division of a bank. The aim is to determine whether a customer's marital status and number of children have an impact on loan default. The bank already has some data on the creditworthiness of its customers.
+
+The report will be considered when creating a credit score for a potential customer. A credit score is used to assess a potential borrower's ability to repay their loan.
 
 ### Data Description
-The data is stored in the file /datasets/music_project_en.csv. Alternatively, you can download it here.
-
-Column Descriptions
-- 'userID' — User ID
-- 'Track' — Song title
-- 'artist' — Name of the singer or band
-- 'genre' — Musical genre
-- 'City' — User's city
-- 'time' — Exact time the song was played
-- 'Day' — Day of the week
+- children: the number of children in the family
+- days_employed: the length of time the customer has been employed
+- dob_years: the customer's age
+- education: the customer's education level
+- education_id: the identifier for the customer's education
+- family_status: the customer's marital status
+- family_status_id: the identifier for the customer's marital status
+- gender: the customer's gender
+- income_type: the type of income the customer has
+- debt: whether the customer has ever defaulted on a loan
+- total_income: monthly income
+- purpose: the purpose for which the loan is being applied for
