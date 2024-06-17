@@ -21,3 +21,23 @@ Los datos se almacenan en el archivo /datasets/music_project_en.csv. Como altern
 - 'City' — ciudad del usuario
 - 'time' — la hora exacta en la que se escuchó la canción
 - 'Day' — día de la semana
+
+## English
+
+### Project Description
+In this project, we will compare the musical preferences of the cities of Springfield and Shelbyville. Real data from Y.Music will be examined to test the hypotheses presented below and to compare user behavior between these two cities.
+
+### Hypotheses
+User activity differs depending on the day of the week and the city. On Monday mornings, the inhabitants of Springfield and Shelbyville listen to different genres. The same happens on Friday nights.
+Listeners from Springfield and Shelbyville have different preferences. In Springfield, they prefer pop music, while in Shelbyville, there are more rap fans.
+
+### Data Description
+
+Column Descriptions
+- 'userID' — User ID
+- 'Track' — Song title
+- 'artist' — Name of the singer or band
+- 'genre' — Musical genre
+- 'City' — User's city
+- 'time' — Exact time the song was played
+- 'Day' — Day of the week
