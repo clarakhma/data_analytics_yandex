@@ -1,114 +1,91 @@
-# 🚕 Análisis de viajes en taxi en Chicago
+Análisis de viajes en taxi en Chicago
+Descripción del proyecto
+En este proyecto se analizaron los patrones de uso de taxis en la ciudad de Chicago durante el mes de noviembre de 2017. Para ello se utilizaron tres conjuntos de datos con información sobre compañías de taxis, barrios donde finalizaron los viajes y condiciones climáticas.
 
-## 📌 Descripción del proyecto
+Se buscó identificar qué empresas tuvieron mayor actividad, en qué barrios finalizaron más viajes y si las condiciones climáticas afectan la duración de los trayectos hacia el aeropuerto O’Hare.
 
-Este proyecto tiene como objetivo analizar los patrones de uso de servicios de taxi en la ciudad de Chicago durante noviembre de 2017. Para ello, se utilizarán tres conjuntos de datos provenientes de consultas SQL previas, que han sido proporcionados en formato CSV. Se buscará comprender qué empresas y barrios presentan mayor actividad y si las condiciones climáticas influyen en la duración de los viajes.
+Análisis realizado
+Se identificaron las compañías de taxis con mayor número de viajes registrados el 15 y 16 de noviembre.
 
-El proyecto incluye dos etapas principales: análisis exploratorio de datos y prueba de hipótesis.
+Se analizaron los barrios con más finalizaciones de viaje en todo el mes de noviembre.
 
----
+Se generaron gráficos comparativos para visualizar la actividad por empresa y por barrio.
 
-## 🔍 Etapa 1: Análisis exploratorio de datos
+Se examinó la duración de los viajes desde el Loop al aeropuerto O'Hare en diferentes condiciones climáticas.
 
-Se analizarán dos archivos CSV:
+Se probó la hipótesis de que los sábados lluviosos afectan la duración promedio de estos viajes.
 
-- `/datasets/project_sql_result_01.csv`: contiene el número de viajes registrados por distintas compañías de taxis los días 15 y 16 de noviembre de 2017.
-- `/datasets/project_sql_result_04.csv`: muestra el promedio de viajes que terminaron en cada barrio de Chicago durante todo noviembre de 2017.
+Descripción de los datos
+project_sql_result_01.csv
+Contiene el número de viajes registrados por cada empresa de taxis durante el 15 y 16 de noviembre.
+Columnas:
 
-El análisis incluye:
-- Carga e inspección de los datos
-- Validación de tipos de datos
-- Identificación de los 10 barrios con más viajes finalizados
-- Visualización de:
-  - Empresas de taxi y cantidad de viajes
-  - Barrios principales por promedio de finalizaciones
+company_name: nombre de la empresa
 
-Se obtendrán conclusiones específicas a partir de los gráficos generados.
+trips_amount: cantidad de viajes
 
----
+project_sql_result_04.csv
+Contiene el promedio de viajes que finalizaron en cada barrio durante noviembre de 2017.
+Columnas:
 
-## 🧪 Etapa 2: Prueba de hipótesis
+dropoff_location_name: nombre del barrio
 
-Se utilizará el archivo:
+average_trips: viajes promedio finalizados en esa zona
 
-- `/datasets/project_sql_result_07.csv`: contiene registros de viajes realizados desde la zona Loop hasta el Aeropuerto Internacional O'Hare, incluyendo la hora de inicio, condiciones climáticas y duración del trayecto.
+project_sql_result_07.csv
+Incluye datos de viajes desde el Loop al Aeropuerto Internacional O’Hare.
+Columnas:
 
-Se probará la siguiente hipótesis:
+start_ts: fecha y hora del viaje
 
-**“La duración promedio de los viajes desde el Loop hasta el Aeropuerto O’Hare cambia los sábados lluviosos.”**
+weather_conditions: condiciones climáticas al inicio
 
-Se establecerá un nivel de significación (alfa) y se explicarán:
-- La formulación de las hipótesis nula y alternativa
-- El criterio estadístico utilizado para validar la hipótesis
-- Las conclusiones obtenidas
+duration_seconds: duración del viaje en segundos
 
----
+🇬🇧 English
+Chicago Taxi Trip Analysis
+Project Description
+This project analyzes taxi usage patterns in the city of Chicago during November 2017. Three datasets were used, providing information on taxi companies, neighborhoods where trips ended, and weather conditions.
 
-## 📝 Evaluación del proyecto
+The goal was to identify which companies had the highest number of trips, the neighborhoods with the most drop-offs, and whether weather conditions affected travel duration to O’Hare Airport.
 
-El proyecto será evaluado considerando:
+Analysis Performed
+Identified the most active taxi companies on November 15–16.
 
-- La correcta recuperación y carga de datos
-- El uso adecuado de slicing, agrupaciones y combinaciones
-- La formulación y prueba de hipótesis
-- La calidad de las conclusiones
-- Comentarios claros y explicativos en el código
+Analyzed neighborhoods with the highest number of trip drop-offs throughout November.
 
----
+Created comparative charts showing company activity and top neighborhoods.
 
-# 🚕 Chicago Taxi Trip Analysis
+Examined trip durations from the Loop to O’Hare under varying weather conditions.
 
-## 📌 Project Description
+Tested the hypothesis that rainy Saturdays affect the average duration of these trips.
 
-This project aims to analyze taxi service usage patterns in the city of Chicago during November 2017. The analysis is based on three CSV datasets resulting from previous SQL queries. The goal is to identify which companies and neighborhoods show the highest activity, and whether weather conditions affect trip durations.
+Data Description
+project_sql_result_01.csv
+Includes the number of trips by taxi company on November 15 and 16.
+Columns:
 
-The project consists of two main stages: exploratory data analysis and hypothesis testing.
+company_name: name of the taxi company
 
----
+trips_amount: number of trips
 
-## 🔍 Stage 1: Exploratory Data Analysis
+project_sql_result_04.csv
+Includes the average number of trips that ended in each neighborhood during November.
+Columns:
 
-Two CSV files are analyzed:
+dropoff_location_name: neighborhood name
 
-- `/datasets/project_sql_result_01.csv`: number of trips recorded by various taxi companies on November 15 and 16, 2017.
-- `/datasets/project_sql_result_04.csv`: average number of trips ending in each Chicago neighborhood throughout November 2017.
+average_trips: average number of trip drop-offs
 
-The analysis includes:
-- Loading and inspecting the datasets
-- Verifying data types
-- Identifying the top 10 neighborhoods with the most trip drop-offs
-- Visualizations:
-  - Taxi companies and number of trips
-  - Top neighborhoods by average drop-offs
+project_sql_result_07.csv
+Contains data on trips from the Loop to O’Hare International Airport.
+Columns:
 
-Clear conclusions will be drawn from the visualizations.
+start_ts: pickup date and time
 
----
+weather_conditions: weather at trip start
 
-## 🧪 Stage 2: Hypothesis Testing
+duration_seconds: trip duration in seconds
 
-Using the file:
 
-- `/datasets/project_sql_result_07.csv`: includes trips from the Loop to O'Hare International Airport with start time, weather conditions, and trip duration in seconds.
-
-We test the following hypothesis:
-
-**“The average duration of trips from the Loop to O’Hare International Airport changes on rainy Saturdays.”**
-
-The significance level (alpha) will be defined, and the following will be explained:
-- Null and alternative hypotheses
-- Statistical criteria used to test the hypothesis
-- Conclusions obtained
-
----
-
-## 📝 Project Evaluation
-
-The project will be evaluated based on:
-
-- Proper data retrieval and loading
-- Correct use of slicing, grouping, and merging
-- Hypothesis formulation and testing
-- Clarity and relevance of conclusions
-- Clear and helpful comments throughout the code
 
