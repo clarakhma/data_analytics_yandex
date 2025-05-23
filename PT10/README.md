@@ -9,7 +9,7 @@ Además del dashboard, se incluye una presentación en PDF con el análisis de l
 
 ## 🌐 Link al dashboard
 
-🔗 [Tableau Public Dashboard](https://public.tableau.com/app/profile/clara.khabbazi/viz/Videosentendencia/Dashboard1))
+🔗 [Tableau Public Dashboard] https://public.tableau.com/app/profile/clara.khabbazi/viz/Videosentendencia/Dashboard1 
 
 ---
 
