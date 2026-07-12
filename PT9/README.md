@@ -50,10 +50,6 @@ Columnas:
 
 ---
 
-## 🖥️ Presentación final
-
-📎 **Presentation**: *[enlace a la presentación en PDF]*  
-(Recuerda incluir tu presentación en formato PDF para compartir con los inversionistas)
 
 ---
 
@@ -109,8 +105,5 @@ Columns:
 
 ---
 
-## 🖥️ Final Presentation
 
-📎 **Presentation**: *[link to the final PDF presentation]*  
-(Make sure your final slides are available in PDF format for review)
 
